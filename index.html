@@ -14,7 +14,7 @@
     <li><a href="#top">Home</a></li>
     <li><a href="#flowchart">Flowchart</a></li>
     <li><a href="#code">Python Code</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#results">ADS-B Data File</a></li>
   </ul>
 </nav>
 
@@ -23,7 +23,7 @@
   <div class="container">
     <div class="row">
       <div class="col-4 col-5-large col-12-medium">
-        <span class="image fit"><img src="images/plane.png" alt="Aircraft" /></span>
+        <span class="image fit"><img src="images/Microsoft.VisualStudio.Services.png" alt="Aircraft" /></span>
       </div>
       <div class="col-8 col-7-large col-12-medium">
         <header>
@@ -46,11 +46,11 @@
       <h2>Flowchart</h2>
       <p>Detection process for horizontal, vertical, and combined conflicts.</p>
     </header>
-    <div class="row aln-center">
-      <div class="col-8 col-12-medium">
-        <span class="image fit"><img src="images/flowchart.png" alt="Conflict Detection Flowchart" /></span>
-      </div>
-    </div>
+
+    <!-- Flowchart Image directly below heading -->
+    <span class="image fit">
+      <img src="images/" alt="Conflict Detection Flowchart" />
+    </span>
   </div>
 </article>
 
@@ -58,19 +58,10 @@
 <article id="code" class="wrapper style3">
   <div class="container">
     <header>
-      <h2>Python Implementation</h2>
+      <h2>Python Code</h2>
       <p>Core script used to detect aircraft conflicts from ADS-B data.</p>
     </header>
-    <pre><code>import pandas as pd
-import itertools
-import math
-
-# Haversine distance function
-def haversine(lat1, lon1, lat2, lon2):
-    R = 3440.065  # NM
-    ... # (rest of your code here)
     
-# Conflict detection loop ...
 </code></pre>
     <p><a href="conflict_detector.py" class="button">Download Full Script</a></p>
   </div>
@@ -80,13 +71,10 @@ def haversine(lat1, lon1, lat2, lon2):
 <article id="results" class="wrapper style2">
   <div class="container">
     <header>
-      <h2>Conflict Detection Results</h2>
-      <p>Output CSV files containing detected conflicts.</p>
+      <h2>ADS-B Data File</h2>
+      <p>The following Python code is.....</p>
     </header>
     <ul>
-      <li><a href="horizontal_conflicts.csv">Horizontal Conflicts</a></li>
-      <li><a href="vertical_conflicts.csv">Vertical Conflicts</a></li>
-      <li><a href="both_conflicts.csv">Both Conflicts</a></li>
     </ul>
   </div>
 </article>
@@ -120,3 +108,4 @@ def haversine(lat1, lon1, lat2, lon2):
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
