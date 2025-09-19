@@ -5,6 +5,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Extra styling to modernize */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .button {
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background-color: #38bdf8 !important;
+      color: #fff !important;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+    /* Section dividers */
+    .divider {
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+    }
+  </style>
 </head>
 <body class="is-preload">
 
@@ -19,86 +45,109 @@
 </nav>
 
 <!-- Home -->
-<article id="top" class="wrapper style1">
-  <div class="container">
-    <div class="row">
-      <div class="col-4 col-5-large col-12-medium">
-        <span class="image fit"><img src="images/Microsoft.VisualStudio.Services.png" alt="Aircraft" /></span>
-      </div>
-      <div class="col-8 col-7-large col-12-medium">
-        <header>
-          <h1 style="font-size: 2rem;">
-            <strong>Aircraft Conflict Detection — Using ADS-B Data</strong>
-          </h1>
-        </header>
-        <p><strong>By:</strong> Demitha Leyanawanniarachchi</p>
-        <p><strong>Course:</strong> 15016406 - COMPUTER PROGRAMMING</p>
-        <a href="#flowchart" class="button large scrolly">Explore Project</a>
+<article id="top" class="wrapper style1" style="background:url('images/air-traffic-bg.jpg') center/cover no-repeat; color:white; position:relative;">
+  <!-- 🔹 Replace with aviation/radar-style background image: "images/air-traffic-bg.jpg" -->
+  <div style="background:rgba(0,0,0,0.6); padding:60px 20px; border-radius:12px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" style="text-align:center;">
+          <header>
+            <h1 style="font-size: 2.5rem; color:#38bdf8;">
+              <strong>Aircraft Conflict Detection — Using ADS-B Data</strong>
+            </h1>
+          </header>
+          <p><strong>By:</strong> Demitha Leyanawanniarachchi</p>
+          <p><strong>Course:</strong> 15016406 - COMPUTER PROGRAMMING</p>
+          <a href="#flowchart" class="button large scrolly" style="margin-top:15px;">🚀 Explore Project</a>
+        </div>
       </div>
     </div>
   </div>
 </article>
 
+<div class="divider"></div>
+
 <!-- Flowchart -->
-<article id="flowchart" class="wrapper style2">
+<article id="flowchart" class="wrapper style2" style="background:#f9fafb;">
   <div class="container">
-    <header>
+    <header style="text-align:center;">
+      <!-- 🔹 Add small radar icon above -->
+      <img src="images/radar-icon.png" alt="Radar Icon" style="width:60px; margin-bottom:10px;">
       <h2>Flowchart</h2>
       <p>Detection process for horizontal, vertical, and combined conflicts.</p>
     </header>
 
     <!-- Flowchart Image -->
     <div style="text-align:center; margin-top:20px;">
-      <img src="ADSB.jpg" alt="Flowchart Diagram" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
+      <!-- 🔹 Replace with your flowchart: "ADSB.jpg" -->
+      <img src="ADSB.jpg" alt="Flowchart Diagram" style="max-width:90%; height:auto; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
     </div>
 
     <!-- Flowchart Download Button -->
     <div style="text-align:center; margin-top:20px;">
-      <a href="https://drive.google.com/file/d/14y9BG6xtp338IaYHxIFTIzY5Zm1TkO_a/view?usp=drive_link" class="button">Download Flowchart PDF</a>
+      <a href="https://drive.google.com/file/d/14y9BG6xtp338IaYHxIFTIzY5Zm1TkO_a/view?usp=drive_link" class="button">📄 Download Flowchart PDF</a>
     </div>
   </div>
 </article>
 
+<div class="divider"></div>
 
 <!-- Python Code -->
-<article id="code" class="wrapper style3">
+<article id="code" class="wrapper style3" style="background:#0f172a; color:white;">
   <div class="container">
-    <header>
+    <header style="text-align:center;">
+      <!-- 🔹 Add Python logo -->
+      <img src="images/python-logo.png" alt="Python Logo" style="width:70px; margin-bottom:10px;">
       <h2>Python Code</h2>
       <p>Core script used to detect aircraft conflicts from ADS-B data.</p>
     </header>
 
-    <!-- Installation Requirements -->
-    <div style="background:#1e293b; color:#f1f5f9; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3); margin-bottom:25px;">
-      <h3 style="margin-top:0; color:#38bdf8; text-align:center;">📦 Required Libraries</h3>
-      <p style="text-align:center; margin-bottom:15px;">Before running the script, make sure you have the following libraries installed:</p>
-      <pre style="background:#0f172a; padding:15px; border-radius:8px; overflow-x:auto; color:#a5f3fc; font-family:monospace; font-size:15px;">
-pip install pandas tqdm
-      </pre>
-    </div>
+    <div class="row" style="display:flex; align-items:center; margin-top:30px;">
+      <!-- Left side: Terminal/code image -->
+      <div class="col-6 col-12-medium" style="text-align:center;">
+        <!-- 🔹 Add coding/terminal screenshot -->
+        <img src="images/python-terminal.png" alt="Python Terminal" style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+      </div>
 
-    <!-- Download Button -->
-    <p style="text-align:center;">
-      <a href="https://drive.google.com/file/d/1P-AELM7RnI2jbrJVH7N9bu1DOKUMOGDu/view?usp=drive_link" class="button">Download Python Script</a>
-    </p>
+      <!-- Right side: Libraries -->
+      <div class="col-6 col-12-medium">
+        <div style="background:#1e293b; color:#f1f5f9; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.3); margin-bottom:25px;">
+          <h3 style="margin-top:0; color:#38bdf8; text-align:center;">📦 Required Libraries</h3>
+          <p style="text-align:center; margin-bottom:15px;">Before running the script, make sure you have the following installed:</p>
+          <pre style="background:#0f172a; padding:15px; border-radius:8px; overflow-x:auto; color:#a5f3fc; font-family:monospace; font-size:15px;">
+pip install pandas tqdm
+          </pre>
+        </div>
+
+        <!-- Download Button -->
+        <p style="text-align:center;">
+          <a href="https://drive.google.com/file/d/1P-AELM7RnI2jbrJVH7N9bu1DOKUMOGDu/view?usp=drive_link" class="button">⬇ Download Python Script</a>
+        </p>
+      </div>
+    </div>
   </div>
 </article>
+
+<div class="divider"></div>
 
 <!-- Results -->
-<article id="results" class="wrapper style2">
+<article id="results" class="wrapper style2" style="background:#f9fafb;">
   <div class="container">
-    <header>
+    <header style="text-align:center;">
       <h2>ADS-B Data File</h2>
-      <p>The following link will direct you to the data file that is used in the python program above.</p>
+      <p>The following link will direct you to the data file used in the Python program above.</p>
     </header>
+
+    <!-- 🔹 Add ADS-B data map image -->
+    <div style="text-align:center; margin:20px 0;">
+      <img src="images/adsb-map.png" alt="ADS-B Data Map" style="max-width:90%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+    </div>
     
     <div style="text-align:center; margin-top:20px;">
-      <a href="https://drive.google.com/file/d/1jjz_77I0GakPa73Nqufaj5zY08-QsbX5/view?usp=drive_link" class="button" style="margin:10px;">Click Here</a>
+      <a href="https://drive.google.com/file/d/1jjz_77I0GakPa73Nqufaj5zY08-QsbX5/view?usp=drive_link" class="button" style="margin:10px;">📂 Download ADS-B Data</a>
     </div>
   </div>
 </article>
-
-
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -109,7 +158,3 @@ pip install pandas tqdm
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
