@@ -41,6 +41,26 @@
       background: white; /* plain white */
       clip-path: none;
     }
+    /* About Project Section Styling */
+    .about-project {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      color: #f1f5f9;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-align: left;
+    }
+    .about-project h2 {
+      color: #38bdf8;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    .about-project p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
   </style>
 </head>
 <body class="is-preload">
@@ -72,11 +92,21 @@
           <a href="#flowchart" class="button large scrolly" style="margin-top:15px; color:white !important;">🚀 Explore Project</a>
         </div>
       </div>
+
+      <!-- About Project Section -->
+      <div class="about-project">
+        <h2>About This Project</h2>
+        <p>
+          This project focuses on the analysis of aircraft surveillance data through the use of Python programming. 
+          The code is designed to read information from an Automatic Dependent Surveillance–Broadcast (ADS-B) data file 
+          and then process the dataset to generate detailed outputs regarding horizontal, vertical, and combined conflicts 
+          that may occur between aircraft. For this project, we will be using an ADS-B data file taken over 
+          Suvarnabhumi airport on the date of 9 September 2019 (day1.csv).
+        </p>
+      </div>
     </div>
   </div>
 </article>
-
-
 
 <!-- Divider before Flowchart -->
 <div class="divider-white"></div>
@@ -85,10 +115,8 @@
 <article id="flowchart" class="wrapper style2" style="background:#f9fafb;">
   <div class="container">
     <header style="text-align:center;">
-      <!-- Small radar icon -->
-      <img src="images/radar-icon.png" alt="Radar Icon" style="width:60px; margin-bottom:10px;">
       <h2>Flowchart</h2>
-      <p>Detection process for horizontal, vertical, and combined conflicts.</p>
+      <p>Click the link below to download the pdf of the following flowchart.</p>
     </header>
 
     <!-- Flowchart Image -->
@@ -99,7 +127,7 @@
 
     <!-- Flowchart Download Button -->
     <div style="text-align:center; margin-top:20px;">
-      <a href="https://drive.google.com/file/d/14y9BG6xtp338IaYHxIFTIzY5Zm1TkO_a/view?usp=drive_link" class="button">📄 Download Flowchart PDF</a>
+      <a href="https://drive.google.com/file/d/14y9BG6xtp338IaYHxIFTIzY5Zm1TkO_a/view?usp=drive_link" class="button">Download Flowchart PDF</a>
     </div>
   </div>
 </article>
@@ -163,6 +191,3 @@ pip install pandas tqdm
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
